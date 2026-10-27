@@ -1232,3 +1232,25 @@ img {
 .special-video-caption { margin-top: 20px; text-align: center; color: var(--gray-color); font-size: 0.95rem; }
 .special-video-caption a { color: var(--primary-color); text-decoration: underline; }
 @media (max-width: 768px) { .special-video-section { padding: 60px 0; } }
+
+/* Consistent festive navigation call-to-action on both pages. */
+.nav-link.nav-festive, .festive-page .nav-link.nav-festive[aria-current="page"] {
+    color: var(--light-color);
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    animation: festivePulse 1.8s ease-in-out infinite;
+}
+.nav-link.nav-festive::after { display: none; }
+.nav-link.nav-festive:hover, .nav-link.nav-festive:focus-visible { color: var(--light-color); animation-play-state: paused; }
+@keyframes festivePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+}
+@media (min-width: 769px) { .navbar .nav-menu { gap: clamp(12px, 1.8vw, 28px); } }
+@media (max-width: 768px) {
+    .nav-menu .nav-festive { width: calc(100% - 40px); margin: 10px 20px; }
+    .nav-menu.active { max-height: 480px; }
+}
+@media (prefers-reduced-motion: reduce) { .nav-link.nav-festive { animation: none; } }
