@@ -1,0 +1,237 @@
+# Image Placeholder Guide
+
+This file contains detailed instructions for replacing placeholder images with professional photography.
+
+## Required Images
+
+### 1. hero-1.jpg (Hero Background)
+**Location:** `assets/images/hero-1.jpg`
+**Dimensions:** 1920x1080px minimum (landscape orientation)
+**Purpose:** Main hero section background
+
+**Content Suggestions:**
+- Professional handyman working on high-end property
+- Close-up of quality tools and craftsmanship
+- Premium home interior being maintained
+- Clean, organized workspace showing professionalism
+
+**Quality Requirements:**
+- High resolution (2000px+ width recommended)
+- Well-lit, professional photography
+- Avoid DIY or amateur-looking images
+- Should convey trust, skill, and quality
+
+**Mood:** Professional, clean, trustworthy, premium
+
+---
+
+### 2. hero-2.jpg (About Section)
+**Location:** `assets/images/hero-2.jpg`
+**Dimensions:** 800x1000px (portrait orientation preferred)
+**Purpose:** About section supporting image
+
+**Content Suggestions:**
+- Handyman examining work with attention to detail
+- Professional consulting with satisfied client
+- Quality workmanship close-up (painting, fitting, repair)
+- Clean finished work showcasing excellence
+
+**Quality Requirements:**
+- Sharp, well-composed image
+- Natural lighting preferred
+- Shows professionalism and care
+- Complements the about section narrative
+
+**Mood:** Skilled, detail-oriented, trustworthy
+
+---
+
+### 3. logo.png (Company Logo)
+**Location:** `assets/images/logo.png`
+**Dimensions:** 200x200px (square, transparent background)
+**Purpose:** Navigation bar branding
+
+**Design Suggestions:**
+- Clean, professional design
+- Readable at small sizes (40x40px)
+- Works on both light and dark backgrounds
+- Simple, memorable icon or text logo
+- Premium aesthetic (avoid clip-art style)
+
+**Format Requirements:**
+- PNG with transparency
+- High resolution (2x for retina displays)
+- Optimized file size
+
+**Color Guidelines:**
+- Should work with white, black, and light blue
+- Consider a monochrome or two-color design
+- Avoid too many colors or complex gradients
+
+---
+
+## Image Optimization Guidelines
+
+### Before Upload:
+1. **Resize to appropriate dimensions**
+   - Hero images: 1920x1080px or larger
+   - About image: 800x1000px
+   - Logo: 400x400px (displayed at 40x40px)
+
+2. **Optimize file size**
+   - Use tools like TinyPNG, Squoosh, or Photoshop "Save for Web"
+   - Target: Hero images under 500KB, about image under 300KB
+   - Logo: Under 50KB
+
+3. **Format selection**
+   - JPG for photographs (hero-1.jpg, hero-2.jpg)
+   - PNG for logo (with transparency)
+   - Consider WebP for better compression (with JPG fallback)
+
+### Recommended Tools:
+- **TinyPNG** (https://tinypng.com/) - Compress images
+- **Squoosh** (https://squoosh.app/) - Advanced compression
+- **Canva** - Create or edit logo if needed
+- **Remove.bg** - Remove backgrounds from images
+
+---
+
+## Photography Style Guide
+
+### DO:
+✓ Use professional, high-quality photography
+✓ Ensure good lighting (natural light preferred)
+✓ Show attention to detail and craftsmanship
+✓ Include clean, organized work environments
+✓ Feature premium tools and materials
+✓ Capture satisfied client interactions
+✓ Show before/after transformations
+✓ Include diverse property types (residential, estate)
+
+### DON'T:
+✗ Use stock photos that look generic
+✗ Include cluttered or messy workspaces
+✗ Show budget or low-quality tools
+✗ Use dated or poor-quality images
+✗ Include watermarks or copyright text
+✗ Use images with visible competitor branding
+✗ Show unsafe work practices
+✗ Include recognizable people without permission
+
+---
+
+## Alternative Image Sources
+
+If professional photography is not yet available:
+
+### Premium Stock Photo Websites:
+1. **Unsplash** (https://unsplash.com/)
+   - Free high-quality images
+   - Search terms: "handyman", "home repair", "contractor", "craftsman"
+
+2. **Pexels** (https://pexels.com/)
+   - Free professional photos
+   - Good for construction/maintenance imagery
+
+3. **iStock/Shutterstock** (Paid)
+   - Highest quality options
+   - More specific handyman imagery
+   - Professional commercial use
+
+### Search Terms to Use:
+- "Professional handyman"
+- "Home maintenance"
+- "Premium property repair"
+- "Skilled craftsman"
+- "Quality workmanship"
+- "Home renovation detail"
+- "Professional contractor"
+
+---
+
+## Image Placement Instructions
+
+### Step 1: Prepare Your Images
+1. Rename your images exactly as shown:
+   - `hero-1.jpg`
+   - `hero-2.jpg`
+   - `logo.png`
+
+2. Optimize images using recommended tools
+
+3. Verify file sizes are reasonable
+
+### Step 2: Add to Project
+1. Place images in: `/assets/images/` folder
+2. Ensure exact file names match
+3. Check file extensions (jpg vs jpeg)
+
+### Step 3: Test
+1. Open `index.html` in browser
+2. Verify all images load correctly
+3. Check responsive behavior on mobile
+4. Ensure images look sharp on retina displays
+
+---
+
+## Image Aspect Ratios
+
+**Hero Background (hero-1.jpg):**
+- Desktop: 16:9 ratio (1920x1080px)
+- Will be cropped on mobile to fill screen
+- Keep important content centered
+
+**About Image (hero-2.jpg):**
+- Vertical or square orientation
+- 4:5 ratio works well (800x1000px)
+- Should complement text content
+
+**Logo (logo.png):**
+- Square (1:1 ratio)
+- Transparent background
+- Vector or high-res raster
+
+---
+
+## Testing Checklist
+
+After adding images, verify:
+- [ ] Images load without errors
+- [ ] File sizes don't slow down page load
+- [ ] Images are sharp and clear
+- [ ] Colors match brand aesthetic
+- [ ] Images work on mobile devices
+- [ ] Logo is visible on navbar
+- [ ] Hero image covers full viewport
+- [ ] About image aligns properly
+- [ ] No copyright/watermark issues
+- [ ] Images convey premium quality
+
+---
+
+## Pro Tips
+
+1. **Hire a Professional Photographer**
+   - Best investment for premium brand image
+   - Capture actual work, team, and clients
+   - Get variety for future marketing use
+
+2. **Create a Photo Library**
+   - Document completed projects
+   - Before/after shots
+   - Team at work
+   - Happy clients (with permission)
+
+3. **Update Regularly**
+   - Refresh hero images seasonally
+   - Add new testimonial photos
+   - Showcase recent premium projects
+
+4. **Maintain Consistency**
+   - Keep similar lighting/color tone
+   - Use same photography style
+   - Maintain professional quality standard
+
+---
+
+**Remember:** Images are crucial for positioning Handie Andie as a premium service. Invest in quality photography that reflects the brand's commitment to excellence.
