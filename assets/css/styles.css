@@ -1181,3 +1181,47 @@ img {
         padding: 30px 20px;
     }
 }
+
+
+/* Festive special — uses the existing Handie Andie design tokens. */
+.special-home { padding: 60px 0; }
+.special-home-card { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; padding: 40px; border-radius: 8px; }
+.special-home-label { color: var(--gray-color); font-weight: 500; margin-bottom: 12px; }
+.special-home-action { text-align: center; }
+.special-home-action .btn { margin-top: 20px; }
+.festive-page .hero { height: auto; min-height: 100vh; padding: 160px 0 80px; }
+.festive-page .hero-content { opacity: 1; animation: none; }
+.special-eyebrow { font-weight: 500; margin-bottom: 24px; }
+.festive-page .hero-subtitle { margin-bottom: 20px; }
+.special-audience { opacity: 0.95; }
+.special-offer { display: flex; flex-direction: column; gap: 6px; margin: 24px auto 32px; }
+.special-price { font-size: 2.5rem; font-weight: 700; line-height: 1.2; }
+.festive-page .service-card { opacity: 1; transform: none; }
+.festive-page .service-card:hover { transform: translateY(-8px); }
+.special-awareness { text-align: center; }
+.special-contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.festive-page .contact::before { content: none; }
+.festive-page .nav-toggle { border: 0; background: transparent; padding: 8px; }
+.festive-page .nav-link[aria-current="page"] { color: var(--primary-color); }
+.festive-page #contact, .festive-page #main { scroll-margin-top: 100px; }
+.special-skip { position: fixed; top: -100px; left: 20px; z-index: 1001; padding: 14px 24px; background: var(--light-color); color: var(--dark-color); border-radius: 6px; }
+.special-skip:focus { top: 12px; }
+.festive-page a:focus-visible, .festive-page button:focus-visible { outline: 3px solid var(--primary-color); outline-offset: 4px; }
+@media (min-width: 769px) and (max-width: 1100px) {
+    .navbar .nav-menu { gap: 1rem; }
+    .navbar .nav-link { font-size: 0.9rem; }
+}
+@media (max-width: 768px) {
+    .special-home-card { grid-template-columns: 1fr; padding: 30px 25px; gap: 24px; }
+    .special-home-action { text-align: left; }
+    .special-contact-grid { grid-template-columns: 1fr; }
+    .festive-page .hero { min-height: 100svh; padding: 140px 0 60px; }
+    .festive-page .hero-content { padding: 0 20px; }
+    .festive-page .special-price { font-size: 2rem; }
+    .festive-page .hero-buttons { margin: 0 auto; }
+    .festive-page .nav-menu:not(.active) { visibility: hidden; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html:has(.festive-page) { scroll-behavior: auto; }
+    .festive-page *, .festive-page *::before, .festive-page *::after { animation: none !important; transition: none !important; }
+}

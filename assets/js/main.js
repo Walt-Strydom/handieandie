@@ -77,9 +77,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===================================
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
             const targetId = this.getAttribute('href');
+            if (!targetId || !targetId.startsWith('#')) return;
+            e.preventDefault();
             const targetSection = document.querySelector(targetId);
             
             if (targetSection) {
@@ -364,3 +364,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===================================
     console.log('Handie Andie Premium - Website Initialized');
 });
+
