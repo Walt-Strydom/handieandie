@@ -1254,3 +1254,8 @@ img {
     .nav-menu.active { max-height: 480px; }
 }
 @media (prefers-reduced-motion: reduce) { .nav-link.nav-festive { animation: none; } }
+
+/* Display the supplied brochure intact at its original aspect ratio. */
+.special-brochure { max-width: 700px; margin: 0 auto 32px; }
+.special-brochure img { display: block; width: 100%; height: auto; }
+.special-brochure a:focus-visible { display: block; outline: 3px solid var(--primary-color); outline-offset: 4px; }
