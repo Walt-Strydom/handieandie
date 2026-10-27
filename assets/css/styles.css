@@ -1225,3 +1225,10 @@ img {
     html:has(.festive-page) { scroll-behavior: auto; }
     .festive-page *, .festive-page *::before, .festive-page *::after { animation: none !important; transition: none !important; }
 }
+
+/* Festive special video uses the existing card and spacing treatments. */
+.special-video-frame { max-width: 900px; margin: 32px auto 0; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); background-color: var(--dark-color); }
+.special-video { display: block; width: 100%; max-height: 70vh; object-fit: contain; background-color: var(--dark-color); }
+.special-video-caption { margin-top: 20px; text-align: center; color: var(--gray-color); font-size: 0.95rem; }
+.special-video-caption a { color: var(--primary-color); text-decoration: underline; }
+@media (max-width: 768px) { .special-video-section { padding: 60px 0; } }
