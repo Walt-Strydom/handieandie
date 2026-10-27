@@ -20,3 +20,19 @@ document.addEventListener('keydown', event => {
         toggle.focus();
     }
 });
+
+const brochureLink = document.querySelector('.special-brochure-open');
+const brochureDialog = document.getElementById('brochureDialog');
+if (brochureLink && brochureDialog && typeof brochureDialog.showModal === 'function') {
+    brochureLink.addEventListener('click', event => {
+        event.preventDefault();
+        brochureDialog.showModal();
+    });
+    brochureDialog.querySelector('.brochure-close').addEventListener('click', () => brochureDialog.close());
+    brochureDialog.addEventListener('click', event => {
+        if (event.target !== brochureDialog) return;
+        const rect = brochureDialog.getBoundingClientRect();
+        if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) brochureDialog.close();
+    });
+    brochureDialog.addEventListener('close', () => brochureLink.focus());
+}
